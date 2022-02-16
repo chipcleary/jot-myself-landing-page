@@ -1,0 +1,103 @@
+body {margin:2rem;}
+
+.icon-container { position: relative; max-width: 180px }
+.icon-container img { display: block;  }
+.icon-container .fas { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+.display { font-weight: 300; }
+.bg-accent { background-color: #FFE02C; }
+.text-accent { color:  #FFE02C; }
+.logo { width: 32px }
+.nav-pills .nav-item { width: 150px }
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 224, 44)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.navbar .nav-link { color: #FFE02C; }
+.navbar .nav-link:hover {  color: white; }
+
+.numberCircle {
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid;
+  font-size: 16px;
+}
+
+.numberCircle:before,
+.numberCircle:after {
+  content: '\200B';
+  display: inline-block;
+  line-height: 0px;
+  padding-top: 50%;
+  padding-bottom: 50%;
+}
+
+.numberCircle:before {
+  padding-left: 8px;
+}
+
+.numberCircle:after {
+  padding-right: 8px;
+}
+
+#carouselWatch {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.carousel-control-prev {
+  margin-top: 30px;
+  margin-left: -50px;
+}
+
+.carousel-control-next {
+  margin-top: 30px;
+  margin-right: -50px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='gray' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%gray' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+
+.bubble-text {
+  position: absolute;
+  top: 30%;
+  width: 70%;
+}
+
+.jot-text {
+  background: url("../images/icon.png") no-repeat left center;
+  padding: 5px 10px 5px 45px;
+  margin: 0;
+  vertical-align: middle;
+   font-style: italic;
+}
+
+.event-text {
+  background: url("../images/calendar-solid.svg") no-repeat left center;
+  background-size: 28px 28px;
+  padding: 5px 12px 5px 45px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 575.98px) { .glyphicon { font-size: 5em; } row  }
+@media screen and (min-width: 576px) and (max-width: 767.98px) { .glyphicon { font-size: 5em; } }
+@media screen and (min-width: 768px) and (max-width: 991.98px) { .glyphicon { font-size: 1.5em; } }
+@media screen and (min-width: 992px) and (max-width: 1199.98px) { .glyphicon { font-size: 3em; } }
+@media screen and (min-width: 1200px) { .glyphicon { font-size: 4em; } }
