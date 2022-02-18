@@ -1,8 +1,4 @@
-// Custom.scss
+// jot-myself.scss
 // Option A: Include all of Bootstrap
 
-// Include any default variable overrides here (though functions won't be available)
-
-@import "../bootstrap/scss/bootstrap";
-
-// Then add additional custom code here
+@import "node_modules/bootstrap/scss/bootstrap";
