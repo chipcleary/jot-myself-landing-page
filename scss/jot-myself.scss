@@ -17,10 +17,12 @@ body {
     margin: 2rem;
 }
 
-h1 { font-size: calc(0.6em + 3.2vw); }
-h2 { font-size: calc(0.5em + 2.8vw); }
-h3 { font-size: calc(0.5em + 2.8vw); font-weight: 300; }
-.lead { font-size: calc(0.6em + 1.0vw); }
+//h1 { font-size: calc(0.6em + 3.2vw); }
+h1 { font-size: min(.6em + 3.2vw, 48px); }
+h2 { font-size: min(0.5em + 2.8vw, 42px); }
+h3 { font-size: min(0.4em + 2.4vw, 36px); font-weight: 300; }
+h4 { font-size: min(0.35em + 2.0vw, 30px); font-weight: 300; }
+.bubble-title { font-size: min(0.6em + 1.0vw, 28px); }
 
 
 /****** PARAGRAPH UTILITIES ******/
@@ -42,13 +44,20 @@ h3 { font-size: calc(0.5em + 2.8vw); font-weight: 300; }
 
 }
 
+.img-bubble {
+  max-width: min(100%, 200px);
+  height: auto;
+  display: block;
+}
+
+
 // Make a circle with a colored background
 .numberCircle {
     display: inline-block;
     border-radius: 50%;
     border: 2px solid;
     font-size: 16px;
-	
+
 	&:before,
 	&:after {
         content: '\200B';
@@ -76,13 +85,14 @@ h3 { font-size: calc(0.5em + 2.8vw); font-weight: 300; }
 
 // Download button
 .download-button {
-    max-width: 200px; 
+    max-width: 200px;
     width: calc(5em + 15vw);
 }
- 
+
 // Add a jot-myself icon before the text
 .jot-text {
-    background: url("../images/icon.png") no-repeat left center;
+    background: url("../images/plus-circle.svg") no-repeat left center;
+    background-size: 28px 28px;
     padding: 5px 10px 5px 45px;
     margin: 0;
     vertical-align: middle;
@@ -96,6 +106,11 @@ h3 { font-size: calc(0.5em + 2.8vw); font-weight: 300; }
     padding: 5px 12px 5px 45px;
     margin: 0;
     vertical-align: middle;
+}
+
+.bubble-text {
+  font-size: 12px;
+  font-weight: 300;
 }
 
 /******  RESPONSIVE PARAGRAPH STYLES ******/
@@ -172,7 +187,7 @@ h3 { font-size: calc(0.5em + 2.8vw); font-weight: 300; }
 .navbar {
     .nav-link {
         color: #FFE02C;
-		
+
 		&:hover {
             color: white;
 		}
@@ -195,5 +210,3 @@ h3 { font-size: calc(0.5em + 2.8vw); font-weight: 300; }
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%gray' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
-
-
