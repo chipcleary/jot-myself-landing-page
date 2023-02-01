@@ -18,7 +18,7 @@ Options -Indexes
 #Options +FollowSymLinks
 Options +SymLinksIfOwnerMatch
 
-# Enable error pages (https://www.bluehost.com/help/article/error-pages)
+# Enable custom error pages (https://www.bluehost.com/help/article/error-pages)
 ErrorDocument 404 /404.shtml
 
 # Set the default handler.
@@ -108,7 +108,7 @@ ErrorDocument 404 /404.shtml
     <FilesMatch "(\.js\.gz|\.css\.gz)$">
       # Serve correct encoding type.
       Header set Content-Encoding gzip
-      # Force proxies to cache gzipped & non-gzipped css/js files separately. 
+      # Force proxies to cache gzipped & non-gzipped css/js files separately.
       Header append Vary Accept-Encoding
     </FilesMatch>
   </IfModule>
