@@ -10,7 +10,7 @@
     <meta name="description"
         content="Capture thoughts and ideas without interrupting your flow.">
     <meta name="author" content="Chip Cleary">
-    <link href="images/icon.png" rel="icon" />
+    <link href="/images/icon.png" rel="icon" />
     <title>Jot Myself</title>
 
     <!-- Core CSS -->
