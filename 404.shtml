@@ -3,15 +3,11 @@
 
 <head>
 
-    <!-- Metadata -->
-    <meta charset="us-ascii">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description"
-        content="Capture thoughts and ideas without interrupting your flow.">
-    <meta name="author" content="Chip Cleary">
     <link href="/images/icon.png" rel="icon" />
     <title>Jot Myself</title>
+
+    <!-- Metadata -->
+    <div data-include="/include/metadata.html"></div>
 
     <!-- Core CSS -->
     <link href="/css/jot-myself.css" rel="stylesheet" />
@@ -20,50 +16,8 @@
 
 <body>
 
-    <!-- Navigation Bar -->
-    <div class="full-width bg-secondary" style="margin-top: -2rem;  ">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg nav-fill w-100">
-                <a class="navbar-brand" href="#">
-                    <img alt="" class="img-fluid rounded-circle logo"
-                        src="/images/jot-myself.png" />
-                    <span class="text-accent ml-1">Jot Myself</span>
-                </a>
-                <button aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"
-                    class="navbar-toggler custom-toggler"
-                    data-target="#navbarSupportedContent" data-toggle="collapse"
-                    type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/index.html#how">How It Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/index.html#examples">Examples</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/index.html#download">Download</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="/using-siri/index.html">Using Siri</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link"
-                                href="/support/index.html">Support</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
+    <!-- NAVBAR -->
+    <div data-include="/include/navbar.html"></div>
 
     <main class="container" role="main">
 
@@ -71,7 +25,8 @@
         <section class="full-width bg-accent" id="file-not-found">
             <div class="container p-5">
                 <div class="row">
-                    <h1 class="full-width my-auto text-center">Hmmm ... this page is not found.</h1>
+                    <h1 class="full-width my-auto text-center">Hmmm ... this
+                        page is not found.</h1>
                 </div>
 
                 <div class="row pt-md-3">
@@ -82,10 +37,10 @@
                                 src="/images/talking-head-404-error.png" />
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="row text-center h-100">
-                            <a class="btn btn-primary btn-large my-auto href="/index.html">Go to the home page</a>
-                        </div>
+                    <div
+                        class="col-md-6 d-flex justify-content-center align-items-center">
+                        <a class="btn btn-primary btn-large my-auto href="
+                            /index.html">Go to the home page</a>
                     </div>
                 </div>
             </div>
@@ -94,15 +49,10 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="full-width bg-secondary py-2" style="margin-bottom: -2rem;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <span class="small text-light">Jot Myself &copy; 2023</span>
-            </div>
-        </div>
-    </footer>
+    <div data-include="/include/footer.html"></div>
 
     <!-- SCRIPTS -->
+    <script src="/js/HTMLInclude.min.js"></script>
 
 </body>
 
