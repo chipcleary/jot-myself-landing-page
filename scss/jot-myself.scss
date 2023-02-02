@@ -3,9 +3,7 @@
 /****** SET VARIABLES ******/
 
 // Modify colors
-$theme-colors: (
-  "accent": #FFE02C
-);
+$theme-colors: ("accent": #FFE02C);
 
 /****** IMPORT BOOTSTRAP ******/
 //  Import bootstrap (after modifying colors)
@@ -18,11 +16,27 @@ body {
 }
 
 //h1 { font-size: calc(0.6em + 3.2vw); }
-h1 { font-size: min(.6em + 3.2vw, 48px); }
-h2 { font-size: min(0.5em + 2.8vw, 42px); }
-h3 { font-size: min(0.4em + 2.4vw, 36px); font-weight: 300; }
-h4 { font-size: min(0.35em + 2.0vw, 30px); font-weight: 300; }
-.bubble-title { font-size: min(0.6em + 1.0vw, 28px); }
+h1 {
+    font-size: min(.6em + 3.2vw, 48px);
+}
+
+h2 {
+    font-size: min(0.5em + 2.8vw, 42px);
+}
+
+h3 {
+    font-size: min(0.4em + 2.4vw, 36px);
+    font-weight: 300;
+}
+
+h4 {
+    font-size: min(0.35em + 2.0vw, 30px);
+    font-weight: 300;
+}
+
+.bubble-title {
+    font-size: min(0.6em + 1.0vw, 28px);
+}
 
 
 /****** PARAGRAPH UTILITIES ******/
@@ -45,9 +59,9 @@ h4 { font-size: min(0.35em + 2.0vw, 30px); font-weight: 300; }
 }
 
 .img-bubble {
-  max-width: min(100%, 200px);
-  height: auto;
-  display: block;
+    max-width: min(100%, 200px);
+    height: auto;
+    display: block;
 }
 
 
@@ -58,8 +72,8 @@ h4 { font-size: min(0.35em + 2.0vw, 30px); font-weight: 300; }
     border: 2px solid;
     font-size: 16px;
 
-	&:before,
-	&:after {
+    &:before,
+    &:after {
         content: '\200B';
         display: inline-block;
         line-height: 0px;
@@ -109,29 +123,46 @@ h4 { font-size: min(0.35em + 2.0vw, 30px); font-weight: 300; }
 }
 
 .bubble-text {
-  font-size: 12px;
-  font-weight: 300;
+    font-size: 12px;
+    font-weight: 300;
 }
 
 /******  RESPONSIVE PARAGRAPH STYLES ******/
 @media screen and (max-width: 767.98px) {
-    .bubble-text { font-size: calc(0.4em + 2.0vw); }
+    .bubble-text {
+        font-size: calc(0.4em + 2.0vw);
+    }
 }
 
 @media screen and (min-width: 768px) {
-    .bubble-text { font-size: calc(0.35em + 1.2vw); }
+    .bubble-text {
+        font-size: calc(0.35em + 1.2vw);
+    }
 }
 
 
 @media screen and (max-width: 298.98px) {
-    .glyphicon { font-size: 2em; }
-    .hero-img { max-width: 200px; }
+    .glyphicon {
+        font-size: 2em;
+    }
+
+    .hero-img {
+        max-width: 200px;
+    }
 }
 
 @media screen and (min-width: 300px) and (max-width: 575.98px) {
-    .glyphicon { font-size: 3em; }
-    .bubble-text { font-size: 15px; }
-    .hero-img { max-width: 200px; }
+    .glyphicon {
+        font-size: 3em;
+    }
+
+    .bubble-text {
+        font-size: 15px;
+    }
+
+    .hero-img {
+        max-width: 200px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -188,9 +219,9 @@ h4 { font-size: min(0.35em + 2.0vw, 30px); font-weight: 300; }
     .nav-link {
         color: #FFE02C;
 
-		&:hover {
+        &:hover {
             color: white;
-		}
+        }
     }
 }
 
@@ -209,4 +240,13 @@ h4 { font-size: min(0.35em + 2.0vw, 30px); font-weight: 300; }
 
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%gray' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/******  PRIVACY PAGE ******/
+#privacy {
+    line-height: 1.5;
+
+    li.menu-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
 }
